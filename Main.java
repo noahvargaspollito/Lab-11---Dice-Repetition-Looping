@@ -21,7 +21,7 @@ class Main
             System.out.println("Roll " + (i + 1) + ": [" + roll() + "]");
 
           if (roll() == 1){
-              oneCount ++;
+              oneCount +=1;
           }
           else if (random == 2)
               twoCount++;
