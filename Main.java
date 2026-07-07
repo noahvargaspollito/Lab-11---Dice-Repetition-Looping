@@ -16,29 +16,31 @@ class Main
 
 
       for (int i=0; i< 100; i++){
-            roll();
-          System.out.println(" Roll ["+ i + "]: " + roll());
+            int random = roll();
+
+            System.out.println("Roll " + (i + 1) + ": [" + roll() + "]");
+
           if (roll() == 1){
               oneCount ++;
           }
-          else if (roll() == 2)
+          else if (random == 2)
               twoCount++;
-          else if (roll() == 3)
+          else if (random == 3)
               threeCount++;
-          else if (roll() == 4)
+          else if (random == 4)
               fourCount++;
-          else if (roll() == 5)
+          else if (random == 5)
               fiveCount++;
-          else if (roll() == 6)
+          else if (random == 6)
               sixCount++;
    }
-      System.out.println("Final Roll Counts");
-      System.out.println("[1]: " + oneCount);
-      System.out.println("[2]: " + twoCount);
-      System.out.println("[3]: " + threeCount);
-      System.out.println("[4]: " + fourCount);
-      System.out.println("[5]: " + fiveCount);
-      System.out.println("[6]: " + sixCount);
+      System.out.println("Final Roll Counts:");
+      System.out.println("[1]: " + oneCount + " times");
+      System.out.println("[2]: " + twoCount + " times");
+      System.out.println("[3]: " + threeCount + " times");
+      System.out.println("[4]: " + fourCount + " times");
+      System.out.println("[5]: " + fiveCount + " times");
+      System.out.println("[6]: " + sixCount + " times");
 
 
   }
